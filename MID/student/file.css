@@ -1,0 +1,88 @@
+/* h2{
+    font-size: 30px;
+    text-align: center;
+}
+.frame{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.personal ,.edu{
+    
+    flex:0 1 500px;
+    
+}
+.edu table {
+    border-collapse: collapse;
+    
+}
+
+.edu th,.edu td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+} */
+body {
+    background-color: #040705;
+    margin: 0;
+    min-height: 100vh;
+    color: #a8d8b4;
+    font-family: "JetBrains Mono", "Fira Code", Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 24px 16px 48px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.personal,
+.edu {
+    display: flex;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.personal fieldset,
+.edu fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+   
+}
+.personal table{
+    margin: 0 auto;
+}
+.edu table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.edu th,
+.edu td {
+    border: 1px solid #a8d8b4;
+    padding: 8px;
+    text-align: center;
+}
+
+.edu input {
+    width: 90%;
+    box-sizing: border-box;
+}
